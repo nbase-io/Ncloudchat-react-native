@@ -1,0 +1,5 @@
+node_modules
+artifacts
+e2e/.env
+*.log
+.DS_STORE
