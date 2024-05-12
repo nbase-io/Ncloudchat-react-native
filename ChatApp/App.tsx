@@ -4,7 +4,7 @@
  *
  * @format
  */
-
+import * as ncloudchat from 'ncloudchat';
 import React from 'react';
 import type {PropsWithChildren} from 'react';
 import {
@@ -44,10 +44,9 @@ async function Connect() {
   const filter = {};
   const sort = {created_at: -1};
   const option = {offset: 0, limit: 100};
-  
   try {
     const result = await nc.getUsers(filter, sort, option);
-    alert(result);
+    alert(result.edges.length);
     
   } catch (error) {
     alert(error);
