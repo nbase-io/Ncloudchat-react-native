@@ -47,7 +47,7 @@ async function Connect() {
   
   try {
     const result = await nc.getUsers(filter, sort, option);
-    alert(result.edges.length);
+    alert(result);
     
   } catch (error) {
     alert(error);
